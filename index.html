@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Quest - Escape Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js"></script>
+</head>
+<body>
+
+
+
+
+<header id="cs-navigation">
+    <div class="cs-container">
+        
+        <a href="" class="cs-logo" aria-label="back to home">
+            <img src="mystery.jpg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12 text-center">
+                    <h3 class="animate-charcter"> MysteryQuest</h3>
+                  </div>
+                </div>
+              </div>
+        </a>
+     
+        <nav class="cs-nav" role="navigation">
+      
+            <button class="cs-toggle" aria-label="mobile menu toggle">
+                <div class="cs-box" aria-hidden="true">
+                    <span class="cs-line cs-line1" aria-hidden="true"></span>
+                    <span class="cs-line cs-line2" aria-hidden="true"></span>
+                    <span class="cs-line cs-line3" aria-hidden="true"></span>
+                </div>
+            </button>
+          
+            <div class="cs-ul-wrapper">
+                <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                    <li class="cs-li">
+                        <a href="#accueil" class="cs-li-link cs-active">
+                            Accueil
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#salles" class="cs-li-link">
+                            Nos Salles
+                        </a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="#reserver" class="cs-li-link">
+                            Réserver
+                        </a>
+                    </li>
+                 
+                </ul>
+            </div>
+        </nav>
+        <a href="#contact" class="cs-button-solid cs-nav-button">Contact</a>
+       
+    </div>
+</header>
+                                
+
+    <section id="accueil">
+        <h2>Bienvenue chez Mystery Quest</h2>
+        <p>Découvrez nos salles d'escape game immersives et venez relever les défis passionnants que nous proposons. Que vous soyez en famille, entre amis ou entre collègues, nos salles sauront vous transporter dans des aventures uniques.</p>
+    </section>
+
+  
+    <section id="salles" class="salles">
+        <h2>Nos Salles</h2>
+        <div class="grid-container">
+            <article>
+                <h3>La Chambre du Pharaon</h3>
+                <p>Explorez les mystères de l'Égypte ancienne et échappez à la malédiction du Pharaon en moins d'une heure.</p>
+            </article>
+            <article>
+                <h3>Le Laboratoire du Professeur</h3>
+                <p>Déjouez les expériences dangereuses d'un scientifique fou avant qu'il ne soit trop tard.</p>
+            </article>
+            <article>
+                <h3>La Forteresse Oubliée</h3>
+                <p>Plongez dans une époque médiévale et essayez de vous échapper de la forteresse avant que l'ennemi n'attaque.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="reserver">
+        <h2>Réserver une Session</h2>
+        <form>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="salle">Choix de la Salle :</label>
+            <select id="salle" name="salle">
+                <option value="pharaon">La Chambre du Pharaon</option>
+                <option value="professeur">Le Laboratoire du Professeur</option>
+                <option value="forteresse">La Forteresse Oubliée</option>
+            </select>
+            
+            <label for="participants">Nombre de Participants :</label>
+            <input type="number" id="participants" name="participants" min="1" max="6" required>
+            
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="heure">Heure :</label>
+            <input type="time" id="heure" name="heure" required>
+            
+            <label for="services">Services Additionnels :</label>
+            <select id="services" name="services" multiple>
+                <option value="guide">Guide Privé</option>
+                <option value="photo">Séance Photo</option>
+                <option value="boissons">Boissons à la sortie</option>
+            </select>
+
+            <button type="submit">Réserver</button>
+        </form>
+    </section>
+
+
+    <footer id="contact">
+        <h2>Contactez-nous</h2>
+        
+        <form>
+            
+            <label for="nom-contact">Nom :</label>
+            <input type="text" id="nom-contact" name="nom-contact" required>
+            
+            <label for="email-contact">Email :</label>
+            <input type="email" id="email-contact" name="email-contact" required>
+
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </footer>
+
+</body>
+</html>
